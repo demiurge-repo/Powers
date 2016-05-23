@@ -1,0 +1,6 @@
+{
+  "name": "Powers",
+  "deps": [
+    "demiurge-repo/Math"
+  ]
+}
