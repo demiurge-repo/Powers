@@ -1,11 +1,10 @@
 import Math;
 
-powerOfThree = exponent[3];
-powerOfTen   = exponent[10];
+powerOfThree = Math.exponentCurry(3);
+powerOfTen   = Math.exponentCurry(10);
 
-powerTo = fn[x] {
-    return = fn[e] {
-        t = exponent[e];
-        return = t[x];
+powerTo = fn(x) {
+    return = fn(e) {
+        return = Math.exponentCurry(e)(x);
     };
 };

@@ -1,8 +1,8 @@
-import "main.dm";
+import "main.dm" as Powers;
 
-t = powerOfThree[2];
-if t == 8 .print["."] else .print[t];
+test = fn(actual, expected) {
+    if (actual == expected) .print(".") else .print(actual);
+};
 
-h = powerTo[2];
-t = h[8];
-if t == 256 .print["."] else .print[t];
+.test(Powers.powerOfThree(2), 8);
+.test(Powers.powerTo(2)(8), 256);
